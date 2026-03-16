@@ -4,49 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Academia Big Gym em Joinville. Musculação completa, instrutores especializados, alimentação fit e planos acessíveis.">
+    <meta name="description" content="Academia Big Gym em Joinville. Musculação completa, instrutores especializados, alimentação fit e planos acessíveis.">
     <title>Academia Big Gym</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/png"
-        href="assets/icons/lg_20c9a996-84d1-4fd3-b588-ea711b9c9421_47251070013171959394254386960016848085016863n.avif">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icons/lg_20c9a996-84d1-4fd3-b588-ea711b9c9421_47251070013171959394254386960016848085016863n.avif">
 </head>
 
 <body>
+
     <header class="header">
-        <nav class="navbar">
-            <ul>
-                <li> <a href="#hero">Início</a></li>
-                <li> <a href="#diferencial">Diferenciais</a></li>
-                <li> <a href="#estrutura">Estrutura</a></li>
-                <li> <a href="#planos">Planos</a></li>
-                <li> <a href="#feedback">Depoimentos</a></li>
-                <li> <a href="#localizacao">Localização</a></li>
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="#hero" class="nav-brand">
+                <span class="nav-brand-academia">Academia</span>
+                Big<span class="nav-brand-gym">Gym</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <ul id="nav-menu" class="nav-menu" role="list">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#diferencial">Diferenciais</a></li>
+                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#feedback">Depoimentos</a></li>
+                <li><a href="#localizacao">Localização</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+
+
         <section id="hero" class="section section-hero">
             <div class="container">
                 <div class="hero-content">
-                    <p class="badge"> <svg class="icon-fire" width="800px" height="800px" viewBox="0 0 64 64"
-                            xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none">
-                            <path
-                                d="M37.34,7.36a.12.12,0,0,1,.18.13c-.47,1.86-2.78,12.63,5.57,19.62,8.16,6.84,8.41,17.13,2.33,24-7.27,8.23-19.84,6.78-25.25,1.37C16.36,48.69,9.44,36.33,21.29,26a.1.1,0,0,1,.16,0c.29,1.23,2.3,9,7.66,10,.25,0,.37-.11.25-.34C27.78,32.6,20.66,17,37.34,7.36Z"
-                                stroke-linecap="round" />
+                    <p class="badge hero-anim-1">
+                        <svg class="icon-fire" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none" aria-hidden="true">
+                            <path d="M37.34,7.36a.12.12,0,0,1,.18.13c-.47,1.86-2.78,12.63,5.57,19.62,8.16,6.84,8.41,17.13,2.33,24-7.27,8.23-19.84,6.78-25.25,1.37C16.36,48.69,9.44,36.33,21.29,26a.1.1,0,0,1,.16,0c.29,1.23,2.3,9,7.66,10,.25,0,.37-.11.25-.34C27.78,32.6,20.66,17,37.34,7.36Z" stroke-linecap="round"/>
                         </svg>
-                        A única academia na região!</p>
-                    <h1 class="hero-title">Sua melhor <span class="highlight">versão</span> começa aqui!</h1>
-                    <p class="hero-description">Equipamentos de última geração, treinadores especializados e um
-                        ambiente que inspira superação.
-                        Transforme seu corpo e sua mente na Big Gym.</p>
-                    <div class="button-group">
+                        A única academia na região!
+                    </p>
+                    <h1 class="hero-title hero-anim-2">Sua melhor <span class="highlight">versão</span> começa aqui!</h1>
+                    <p class="hero-description hero-anim-3">Equipamentos de última geração, treinadores especializados e um ambiente que inspira superação. Transforme seu corpo e sua mente na Big Gym.</p>
+                    <div class="button-group hero-anim-4">
                         <a href="#planos" class="btn btn-primary">Comece Agora</a>
                         <a href="#localizacao" class="btn btn-outline">Onde Ficamos</a>
                     </div>
@@ -54,7 +64,8 @@
             </div>
         </section>
 
-        <section id="diferencial" class="section section-diferencial">
+
+        <section id="diferencial" class="section section-diferencial reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Por que escolher a Big Gym?</p>
@@ -62,150 +73,86 @@
                 </div>
 
                 <div class="diferencial-grid">
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" fill="currentColor" height="800px" width="800px"
-                                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.462 500.462"
-                                xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M500.462,155.514l-46.742-46.743l1.954-1.954c8.279-8.279,12.837-19.284,12.837-30.99c0-11.707-4.558-22.711-12.837-30.99
-			c-17.091-17.101-44.904-17.091-61.986,0l-1.95,1.95L344.995,0.043l-48.139,48.139L254.688,6.014L192.63,68.072l88.91,88.912
-			L156.91,281.609l-88.881-88.936L5.971,254.731l42.169,42.171L0,345.038l46.74,46.74l-1.952,1.952
-			c-17.087,17.091-17.087,44.899,0,61.986c8.543,8.548,19.769,12.817,30.99,12.817c11.226,0,22.452-4.269,30.995-12.817l1.952-1.952
-			l46.654,46.654l48.216-48.059l42.178,42.179l61.986-61.986l-88.881-88.936l124.644-124.648l88.91,88.912l62.063-62.063
-			l-42.169-42.168L500.462,155.514z M407.611,58.76c9.413-9.409,24.726-9.418,34.139,0c9.409,9.413,9.409,24.721,0,34.135
-			l-1.952,1.952l-17.07-17.067L405.66,60.71L407.611,58.76z M344.995,27.889l32.819,32.82l-0.002,0.002l30.993,30.99l63.81,63.813
-			l-34.212,34.212l-63.813-63.81l-63.812-63.811L344.995,27.889z M92.851,441.793c-9.409,9.413-24.721,9.413-34.139,0
-			c-9.409-9.409-9.409-24.726,0-34.139l1.952-1.952l34.139,34.139L92.851,441.793z M155.399,472.591l-32.75-32.75l-61.986-61.986
-			l-32.817-32.817l34.216-34.211l127.606,127.611L155.399,472.591z M279.913,432.553l-34.139,34.139l-28.233-28.234l0.002-0.002
-			L139.8,360.716L33.817,254.731l34.212-34.212l104.002,104.075l32.883,32.987l0.041-0.041L279.913,432.553z M204.955,329.685
-			l-17.064-17.075l-17.04-17.096l124.611-124.606l17.07,17.067l17.069,17.069L204.955,329.685z M466.649,245.817l-34.216,34.216
-			l-74.987-74.989l0.002-0.002l-30.993-30.99L220.476,68.072l34.212-34.212l28.246,28.245l-0.001,0.001l77.736,77.733
-			L466.649,245.817z" />
-                                    </g>
-                                </g>
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 500.462 500.462" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M500.462,155.514l-46.742-46.743l1.954-1.954c8.279-8.279,12.837-19.284,12.837-30.99c0-11.707-4.558-22.711-12.837-30.99 c-17.091-17.101-44.904-17.091-61.986,0l-1.95,1.95L344.995,0.043l-48.139,48.139L254.688,6.014L192.63,68.072l88.91,88.912 L156.91,281.609l-88.881-88.936L5.971,254.731l42.169,42.171L0,345.038l46.74,46.74l-1.952,1.952 c-17.087,17.091-17.087,44.899,0,61.986c8.543,8.548,19.769,12.817,30.99,12.817c11.226,0,22.452-4.269,30.995-12.817l1.952-1.952 l46.654,46.654l48.216-48.059l42.178,42.179l61.986-61.986l-88.881-88.936l124.644-124.648l88.91,88.912l62.063-62.063 l-42.169-42.168L500.462,155.514z M407.611,58.76c9.413-9.409,24.726-9.418,34.139,0c9.409,9.413,9.409,24.721,0,34.135 l-1.952,1.952l-17.07-17.067L405.66,60.71L407.611,58.76z M344.995,27.889l32.819,32.82l-0.002,0.002l30.993,30.99l63.81,63.813 l-34.212,34.212l-63.813-63.81l-63.812-63.811L344.995,27.889z M92.851,441.793c-9.409,9.413-24.721,9.413-34.139,0 c-9.409-9.409-9.409-24.726,0-34.139l1.952-1.952l34.139,34.139L92.851,441.793z M155.399,472.591l-32.75-32.75l-61.986-61.986 l-32.817-32.817l34.216-34.211l127.606,127.611L155.399,472.591z M279.913,432.553l-34.139,34.139l-28.233-28.234l0.002-0.002 L139.8,360.716L33.817,254.731l34.212-34.212l104.002,104.075l32.883,32.987l0.041-0.041L279.913,432.553z M204.955,329.685 l-17.064-17.075l-17.04-17.096l124.611-124.606l17.07,17.067l17.069,17.069L204.955,329.685z M466.649,245.817l-34.216,34.216 l-74.987-74.989l0.002-0.002l-30.993-30.99L220.476,68.072l34.212-34.212l28.246,28.245l-0.001,0.001l77.736,77.733 L466.649,245.817z"/>
                             </svg>
                         </div>
                         <h3>Musculação Completa</h3>
-                        <p>Equipamentos de qualidade para todos os grupos musculares. Halteres, barras, máquinas e
-                            anilhas
-                            para você evoluir no seu treino.</p>
+                        <p>Equipamentos de qualidade para todos os grupos musculares. Halteres, barras, máquinas e anilhas para você evoluir no seu treino.</p>
                     </article>
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" fill="currentColor" height="800px" width="800px"
-                                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001"
-                                xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M314.801,290.806l-34.999-34.998l25.837-25.837c14.577,9.805,31.487,14.722,48.404,14.722
-			c22.222,0,44.444-8.458,61.36-25.375l96.599-96.599l-23.609-23.609l-74.721,74.721l-9.428-9.428l74.721-74.721l-23.609-23.61
-			l-74.721,74.721l-9.429-9.429l74.721-74.721l-23.609-23.609l-74.721,74.721l-9.429-9.429l74.721-74.721L389.282,0l-96.599,96.598
-			c-16.39,16.39-25.416,38.181-25.416,61.36c0,12.172,2.512,23.952,7.251,34.779l-89.307-89.307
-			c-35.535-35.535-86.43-52.353-136.136-44.984c-11.936,1.768-21.702,9.984-25.487,21.441c-3.785,11.456-0.837,23.875,7.695,32.406
-			l172.408,172.408l-6.53,6.53l-28.805-28.806L0.001,430.781l81.221,81.221l168.354-168.354l-28.806-28.806l35.423-35.423
-			l34.999,34.999l-28.806,28.806L430.74,511.577l81.219-81.221L343.607,262.001L314.801,290.806z M314.604,121.979l75.415,75.415
-			c-20.924,19.107-53.492,18.549-73.727-1.686c-10.084-10.084-15.637-23.491-15.637-37.751
-			C300.655,144.516,305.592,131.837,314.604,121.979z M81.221,464.783l-34.003-34.002l121.138-121.137l34.002,34.002L81.221,464.783
-			z M227.299,261.093L57.241,91.033c38.255-4.634,77.046,8.69,104.361,36.005l99.877,99.877L227.299,261.093z M430.74,464.358
-			L309.603,343.221l34.003-34.002l121.137,121.137L430.74,464.358z" />
-                                    </g>
-                                </g>
+
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M314.801,290.806l-34.999-34.998l25.837-25.837c14.577,9.805,31.487,14.722,48.404,14.722 c22.222,0,44.444-8.458,61.36-25.375l96.599-96.599l-23.609-23.609l-74.721,74.721l-9.428-9.428l74.721-74.721l-23.609-23.61 l-74.721,74.721l-9.429-9.429l74.721-74.721l-23.609-23.609l-74.721,74.721l-9.429-9.429l74.721-74.721L389.282,0l-96.599,96.598 c-16.39,16.39-25.416,38.181-25.416,61.36c0,12.172,2.512,23.952,7.251,34.779l-89.307-89.307 c-35.535-35.535-86.43-52.353-136.136-44.984c-11.936,1.768-21.702,9.984-25.487,21.441c-3.785,11.456-0.837,23.875,7.695,32.406 l172.408,172.408l-6.53,6.53l-28.805-28.806L0.001,430.781l81.221,81.221l168.354-168.354l-28.806-28.806l35.423-35.423 l34.999,34.999l-28.806,28.806L430.74,511.577l81.219-81.221L343.607,262.001L314.801,290.806z M314.604,121.979l75.415,75.415 c-20.924,19.107-53.492,18.549-73.727-1.686c-10.084-10.084-15.637-23.491-15.637-37.751 C300.655,144.516,305.592,131.837,314.604,121.979z M81.221,464.783l-34.003-34.002l121.138-121.137l34.002,34.002L81.221,464.783z M227.299,261.093L57.241,91.033c38.255-4.634,77.046,8.69,104.361,36.005l99.877,99.877L227.299,261.093z M430.74,464.358 L309.603,343.221l34.003-34.002l121.137,121.137L430.74,464.358z"/>
                             </svg>
                         </div>
                         <h3>Comidas Fit Congeladas</h3>
-                        <p>Compre suas refeições fit aqui mesmo na academia. Marmitas equilibradas, prontas para
-                            aquecer e
-                            comer antes ou depois do treino.</p>
+                        <p>Compre suas refeições fit aqui mesmo na academia. Marmitas equilibradas, prontas para aquecer e comer antes ou depois do treino.</p>
                     </article>
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" width="800px" height="800px" viewBox="0 0 24 24"
-                                id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <style>
-                                        .cls-1 {
-                                            fill: none;
-                                            stroke: currentColor;
-                                            stroke-miterlimit: 10;
-                                            stroke-width: 1.91px;
-                                        }
-                                    </style>
-                                </defs>
-                                <polygon class="cls-1" points="17.73 22.5 6.27 22.5 3.41 1.5 20.59 1.5 17.73 22.5" />
-                                <path class="cls-1" d="M19.68,8.18C12,10.09,12,5.32,4.32,8.18" />
+
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs><style>.cls-1{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:1.91px;}</style></defs>
+                                <polygon class="cls-1" points="17.73 22.5 6.27 22.5 3.41 1.5 20.59 1.5 17.73 22.5"/>
+                                <path class="cls-1" d="M19.68,8.18C12,10.09,12,5.32,4.32,8.18"/>
                             </svg>
                         </div>
                         <h3>Geladeira de Bebidas</h3>
-                        <p>Energéticos, água gelada, whey pronto para beber e outras opções. Tudo na geladeira
-                            pronto para
-                            você abastecer o shape.</p>
+                        <p>Energéticos, água gelada, whey pronto para beber e outras opções. Tudo na geladeira pronto para você abastecer o shape.</p>
                     </article>
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" fill="currentColor" width="800px" height="800px"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19,8H14.724l3.144-5.5A1,1,0,0,0,17,1H10a1,1,0,0,0-.895.553l-5,10A1,1,0,0,0,5,13H9.656L7.042,21.713a1,1,0,0,0,1.722.933l11-13A1,1,0,0,0,19,8Zm-8.663,9.689,1.621-5.4A1,1,0,0,0,11,11H6.618l4-8h4.658L12.132,8.5A1,1,0,0,0,13,10h3.844Z" />
+
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19,8H14.724l3.144-5.5A1,1,0,0,0,17,1H10a1,1,0,0,0-.895.553l-5,10A1,1,0,0,0,5,13H9.656L7.042,21.713a1,1,0,0,0,1.722.933l11-13A1,1,0,0,0,19,8Zm-8.663,9.689,1.621-5.4A1,1,0,0,0,11,11H6.618l4-8h4.658L12.132,8.5A1,1,0,0,0,13,10h3.844Z"/>
                             </svg>
                         </div>
                         <h3>Treino com Energia</h3>
-                        <p>Ambiente que motiva. Som alto, clima de treino pesado e galera focada. Aqui ninguém vem
-                            passear.
-                        </p>
+                        <p>Ambiente que motiva. Som alto, clima de treino pesado e galera focada. Aqui ninguém vem passear.</p>
                     </article>
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" width="800px" height="800px" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <h3>Horário Flexível</h3>
-                        <p>Aberto em horários que cabem na sua rotina. De manhã cedo até a noite, sempre tem horário
-                            para
-                            você treinar.</p>
+                        <p>Aberto em horários que cabem na sua rotina. De manhã cedo até a noite, sempre tem horário para você treinar.</p>
                     </article>
-                    <article class="diferencial-item">
-                        <div class="icon">
-                            <svg class="section-diferencial-icon" width="800px" height="800px" viewBox="0 0 24 24"
-                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3 18C3 15.3945 4.66081 13.1768 6.98156 12.348C7.61232 12.1227 8.29183 12 9 12C9.70817 12 10.3877 12.1227 11.0184 12.348C11.3611 12.4703 11.6893 12.623 12 12.8027C12.3107 12.623 12.6389 12.4703 12.9816 12.348C13.6123 12.1227 14.2918 12 15 12C15.7082 12 16.3877 12.1227 17.0184 12.348C19.3392 13.1768 21 15.3945 21 18V21H15.75V19.5H19.5V18C19.5 15.5147 17.4853 13.5 15 13.5C14.4029 13.5 13.833 13.6163 13.3116 13.8275C14.3568 14.9073 15 16.3785 15 18V21H3V18ZM9 11.25C8.31104 11.25 7.66548 11.0642 7.11068 10.74C5.9977 10.0896 5.25 8.88211 5.25 7.5C5.25 5.42893 6.92893 3.75 9 3.75C10.2267 3.75 11.3158 4.33901 12 5.24963C12.6842 4.33901 13.7733 3.75 15 3.75C17.0711 3.75 18.75 5.42893 18.75 7.5C18.75 8.88211 18.0023 10.0896 16.8893 10.74C16.3345 11.0642 15.689 11.25 15 11.25C14.311 11.25 13.6655 11.0642 13.1107 10.74C12.6776 10.4869 12.2999 10.1495 12 9.75036C11.7001 10.1496 11.3224 10.4869 10.8893 10.74C10.3345 11.0642 9.68896 11.25 9 11.25ZM13.5 18V19.5H4.5V18C4.5 15.5147 6.51472 13.5 9 13.5C11.4853 13.5 13.5 15.5147 13.5 18ZM11.25 7.5C11.25 8.74264 10.2426 9.75 9 9.75C7.75736 9.75 6.75 8.74264 6.75 7.5C6.75 6.25736 7.75736 5.25 9 5.25C10.2426 5.25 11.25 6.25736 11.25 7.5ZM15 5.25C13.7574 5.25 12.75 6.25736 12.75 7.5C12.75 8.74264 13.7574 9.75 15 9.75C16.2426 9.75 17.25 8.74264 17.25 7.5C17.25 6.25736 16.2426 5.25 15 5.25Z"
-                                    fill="currentColor" />
+
+                    <article class="diferencial-item reveal-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18C3 15.3945 4.66081 13.1768 6.98156 12.348C7.61232 12.1227 8.29183 12 9 12C9.70817 12 10.3877 12.1227 11.0184 12.348C11.3611 12.4703 11.6893 12.623 12 12.8027C12.3107 12.623 12.6389 12.4703 12.9816 12.348C13.6123 12.1227 14.2918 12 15 12C15.7082 12 16.3877 12.1227 17.0184 12.348C19.3392 13.1768 21 15.3945 21 18V21H15.75V19.5H19.5V18C19.5 15.5147 17.4853 13.5 15 13.5C14.4029 13.5 13.833 13.6163 13.3116 13.8275C14.3568 14.9073 15 16.3785 15 18V21H3V18ZM9 11.25C8.31104 11.25 7.66548 11.0642 7.11068 10.74C5.9977 10.0896 5.25 8.88211 5.25 7.5C5.25 5.42893 6.92893 3.75 9 3.75C10.2267 3.75 11.3158 4.33901 12 5.24963C12.6842 4.33901 13.7733 3.75 15 3.75C17.0711 3.75 18.75 5.42893 18.75 7.5C18.75 8.88211 18.0023 10.0896 16.8893 10.74C16.3345 11.0642 15.689 11.25 15 11.25C14.311 11.25 13.6655 11.0642 13.1107 10.74C12.6776 10.4869 12.2999 10.1495 12 9.75036C11.7001 10.1496 11.3224 10.4869 10.8893 10.74C10.3345 11.0642 9.68896 11.25 9 11.25ZM13.5 18V19.5H4.5V18C4.5 15.5147 6.51472 13.5 9 13.5C11.4853 13.5 13.5 15.5147 13.5 18ZM11.25 7.5C11.25 8.74264 10.2426 9.75 9 9.75C7.75736 9.75 6.75 8.74264 6.75 7.5C6.75 6.25736 7.75736 5.25 9 5.25C10.2426 5.25 11.25 6.25736 11.25 7.5ZM15 5.25C13.7574 5.25 12.75 6.25736 12.75 7.5C12.75 8.74264 13.7574 9.75 15 9.75C16.2426 9.75 17.25 8.74264 17.25 7.5C17.25 6.25736 16.2426 5.25 15 5.25Z"/>
                             </svg>
                         </div>
                         <h3>Instrutores Especializados</h3>
-                        <p>Aqui você não treina sozinho. Nossa equipe acompanha de perto cada aluno,
-                            motivando para que você evolua com segurança e resultado de verdade.</p>
+                        <p>Aqui você não treina sozinho. Nossa equipe acompanha de perto cada aluno, motivando para que você evolua com segurança e resultado de verdade.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="alimentacao" class="section section-alimentacao">
+
+        <section id="alimentacao" class="section section-alimentacao reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Exclusivo Big Gym</p>
                     <h2 class="section-title">Alimentação e <span class="highlight">Hidratação</span></h2>
-                    <p class="section-description">Aqui você não precisa sair da academia para se alimentar bem. Temos
-                        comidas fit congeladas e uma
-                        geladeira completa com tudo que você precisa.</p>
+                    <p class="section-description">Aqui você não precisa sair da academia para se alimentar bem. Temos comidas fit congeladas e uma geladeira completa com tudo que você precisa.</p>
                 </div>
 
                 <div class="alimentacao-grid">
-                    <div class="alimentacao-photo">
+                    <div class="alimentacao-photo reveal-card">
                         <img src="assets/alimentacao/fit-food.jpg" alt="Marmitas fit congeladas prontas para consumo">
                         <div class="alimentacao-overlay">
                             <h3>Comidas Fit <span class="highlight">Congeladas</span></h3>
-
-                            <ul>
+                            <ul role="list">
                                 <li>Frango grelhado com arroz integral</li>
                                 <li>Carne com batata doce</li>
                                 <li>Peixe com legumes</li>
@@ -215,12 +162,11 @@
                         </div>
                     </div>
 
-                    <div class="alimentacao-photo">
+                    <div class="alimentacao-photo reveal-card">
                         <img src="assets/alimentacao/gym-area-4.jpg" alt="Geladeira com bebidas e suplementos">
                         <div class="alimentacao-overlay">
                             <h3>Geladeira de <span class="highlight">Bebidas</span></h3>
-
-                            <ul>
+                            <ul role="list">
                                 <li>Energéticos (Monster, RedBull)</li>
                                 <li>Água mineral gelada</li>
                                 <li>Whey pronto para beber</li>
@@ -233,58 +179,87 @@
             </div>
         </section>
 
-        <section id="estrutura" class="section section-estrutura">
+
+        <section id="estrutura" class="section section-estrutura reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Conheça o Espaço</p>
                     <h2 class="section-title">Nossa <span class="highlight">estrutura</span></h2>
-                    <p class="section-description">Uma academia de bairro com tudo que você precisa para evoluir na
-                        musculação. Confira nosso espaço. </p>
+                    <p class="section-description">Uma academia de bairro com tudo que você precisa para evoluir na musculação. Confira nosso espaço.</p>
                 </div>
                 <div class="estrutura-grid">
-                    <div class="estrutura-card">
-                        <img src="assets/estrutura/hero-gym.jpg" alt="Fotos da academia geral">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/hero-gym.jpg" data-caption="Visão geral da Big Gym" role="button" tabindex="0" aria-label="Ampliar foto: Visão geral da Big Gym">
+                        <img src="assets/estrutura/hero-gym.jpg" alt="Visão geral da Big Gym">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
-                    <div class="estrutura-card">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-1.jpg" data-caption="Área de treino - foto 1" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 1">
                         <img src="assets/estrutura/gym-area-1.jpg" alt="Área de treino da Big Gym - foto 1">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
-                    <div class="estrutura-card">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-2.jpg" data-caption="Área de treino - foto 2" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 2">
                         <img src="assets/estrutura/gym-area-2.jpg" alt="Área de treino da Big Gym - foto 2">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
-                    <div class="estrutura-card">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-3.jpg" data-caption="Área de treino - foto 3" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 3">
                         <img src="assets/estrutura/gym-area-3.jpg" alt="Área de treino da Big Gym - foto 3">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
-                    <div class="estrutura-card">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-5.jpg" data-caption="Área de treino - foto 4" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 4">
                         <img src="assets/estrutura/gym-area-5.jpg" alt="Área de treino da Big Gym - foto 4">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
-                    <div class="estrutura-card">
+                    <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-6.jpg" data-caption="Área de treino - foto 5" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 5">
                         <img src="assets/estrutura/gym-area-6.jpg" alt="Área de treino da Big Gym - foto 5">
+                        <div class="estrutura-zoom-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="instrutores" class="section section-instrutores">
+
+        <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de foto" hidden>
+            <button class="lightbox-close" aria-label="Fechar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="lightbox-backdrop"></div>
+            <div class="lightbox-content">
+                <img class="lightbox-img" src="" alt="">
+                <p class="lightbox-caption"></p>
+            </div>
+        </div>
+
+
+        <section id="instrutores" class="section section-instrutores reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Nossa Equipe</p>
                     <h2 class="section-title">Treinadores <span class="highlight">Especializados</span></h2>
-                    <p class="section-description">Profissionais certificados e apaixonados por transformar vidas
-                        através do esporte e da atividade física.
-                    </p>
+                    <p class="section-description">Profissionais certificados e apaixonados por transformar vidas através do esporte e da atividade física.</p>
                 </div>
                 <div class="instrutores-grid">
-                    <article class="instrutor-card">
+                    <article class="instrutor-card reveal-card">
                         <img src="assets/trainers/trainer-1.jpg" alt="Instrutor de musculação da Big Gym - Foto 1">
                         <h3 class="instrutor-nome">Nome instrutor 1</h3>
                         <p class="instrutor-cargo">Cargo</p>
                     </article>
-                    <article class="instrutor-card">
+                    <article class="instrutor-card reveal-card">
                         <img src="assets/trainers/trainer-2.jpg" alt="Instrutor de musculação da Big Gym - Foto 2">
                         <h3 class="instrutor-nome">Nome instrutor 2</h3>
                         <p class="instrutor-cargo">Cargo</p>
                     </article>
-                    <article class="instrutor-card">
+                    <article class="instrutor-card reveal-card">
                         <img src="assets/trainers/trainer-3.jpg" alt="Instrutor de musculação da Big Gym - Foto 3">
                         <h3 class="instrutor-nome">Nome instrutor 3</h3>
                         <p class="instrutor-cargo">Cargo</p>
@@ -293,20 +268,21 @@
             </div>
         </section>
 
-        <section id="planos" class="section section-planos">
+
+        <section id="planos" class="section section-planos reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Escolha seu Plano</p>
                     <h2 class="section-title">Nossos <span class="highlight">Planos</span></h2>
                 </div>
                 <div class="planos-grid">
-                    <article class="plano-card">
+                    <article class="plano-card reveal-card">
                         <h3 class="plano-titulo">Plano Mensal</h3>
                         <p class="plano-preco">
                             <span class="valor">R$ 120,00</span>
                             <span class="periodo">/mês</span>
                         </p>
-                        <ul class="plano-beneficios">
+                        <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
                             <li>Sem fidelidade</li>
@@ -315,14 +291,14 @@
                         <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
                     </article>
 
-                    <article class="plano-card destaque-plano">
+                    <article class="plano-card destaque-plano reveal-card">
                         <span class="plano-badge">Mais Vendido</span>
                         <h3 class="plano-titulo">Plano Semestral</h3>
                         <p class="plano-preco">
                             <span class="valor">R$ 95,00</span>
                             <span class="periodo">/mês</span>
                         </p>
-                        <ul class="plano-beneficios">
+                        <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
                             <li>6 meses de compromisso</li>
@@ -332,13 +308,13 @@
                         <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
                     </article>
 
-                    <article class="plano-card">
+                    <article class="plano-card reveal-card">
                         <h3 class="plano-titulo">Plano Anual</h3>
                         <p class="plano-preco">
                             <span class="valor">R$ 89,90</span>
                             <span class="periodo">/mês</span>
                         </p>
-                        <ul class="plano-beneficios">
+                        <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
                             <li>12 meses de compromisso</li>
@@ -352,7 +328,8 @@
             </div>
         </section>
 
-        <section id="feedback" class="section section-feedback">
+
+        <section id="feedback" class="section section-feedback reveal-section">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Depoimentos</p>
@@ -361,16 +338,13 @@
                 </div>
 
                 <div class="feedback-carousel" aria-roledescription="carrossel">
-                    <button class="feedback-arrow feedback-arrow-prev" type="button"
-                        aria-label="Ver depoimentos anteriores" data-feedback="prev">‹</button>
+                    <button class="feedback-arrow feedback-arrow-prev" type="button" aria-label="Ver depoimentos anteriores" data-feedback="prev">‹</button>
 
                     <div class="feedback-viewport">
                         <div class="feedback-track">
                             <article class="feedback-card">
                                 <blockquote class="feedback-quote">
-                                    <p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos,
-                                        manutenção em dia e
-                                        aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p>
+                                    <p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos, manutenção em dia e aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p>
                                 </blockquote>
                                 <p class="feedback-name">Juliana Costa</p>
                                 <p class="feedback-role">Aluna há 3 anos</p>
@@ -378,10 +352,7 @@
 
                             <article class="feedback-card">
                                 <blockquote class="feedback-quote">
-                                    <p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício
-                                        disparado.
-                                        Equipamentos
-                                        de qualidade, geladeira com whey pronto e marmitas incríveis.</p>
+                                    <p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício disparado. Equipamentos de qualidade, geladeira com whey pronto e marmitas incríveis.</p>
                                 </blockquote>
                                 <p class="feedback-name">Diego Ferreira</p>
                                 <p class="feedback-role">Aluno há 8 meses</p>
@@ -389,10 +360,7 @@
 
                             <article class="feedback-card">
                                 <blockquote class="feedback-quote">
-                                    <p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao
-                                        suporte dos
-                                        instrutores. A academia tem tudo que preciso, sem frescura, foco total no
-                                        treino!</p>
+                                    <p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao suporte dos instrutores. A academia tem tudo que preciso, sem frescura, foco total no treino!</p>
                                 </blockquote>
                                 <p class="feedback-name">Patricia Lima</p>
                                 <p class="feedback-role">Aluna há 1 ano e meio</p>
@@ -400,11 +368,7 @@
 
                             <article class="feedback-card">
                                 <blockquote class="feedback-quote">
-                                    <p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é
-                                        muito motivador.
-                                        O
-                                        diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.
-                                    </p>
+                                    <p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é muito motivador. O diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.</p>
                                 </blockquote>
                                 <p class="feedback-name">Carlos Silva</p>
                                 <p class="feedback-role">Aluno há 2 anos</p>
@@ -412,39 +376,29 @@
                         </div>
                     </div>
 
-                    <button class="feedback-arrow feedback-arrow-next" type="button"
-                        aria-label="Ver próximos depoimentos" data-feedback="next">›</button>
+                    <button class="feedback-arrow feedback-arrow-next" type="button" aria-label="Ver próximos depoimentos" data-feedback="next">›</button>
                 </div>
             </div>
         </section>
 
-        <section id="localizacao" class="section section-localizacao">
-            <div class="container">
 
+        <section id="localizacao" class="section section-localizacao reveal-section">
+            <div class="container">
                 <div class="localizacao-card">
                     <div class="localizacao-grid">
                         <div class="localizacao-info">
                             <div class="localizacao-header">
                                 <p class="section-subtitle">Venha nos Visitar</p>
-                                <h2 class="section-title">Comece sua <span class="highlight">Transformação</span> Hoje
-                                </h2>
-                                <p class="section-description">Faça uma aula avulsa por apenas R$20,00 e conheça de
-                                    perto a
-                                    estrutura da Big
-                                    Gym. Estamos te esperando!
-                                </p>
+                                <h2 class="section-title">Comece sua <span class="highlight">Transformação</span> Hoje</h2>
+                                <p class="section-description">Faça uma aula avulsa por apenas R$20,00 e conheça de perto a estrutura da Big Gym. Estamos te esperando!</p>
                             </div>
 
                             <div class="localizacao-itens">
                                 <div class="localizacao-item">
-                                    <div class="icon">
-                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                            <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
+                                    <div class="icon" aria-hidden="true">
+                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </div>
                                     <div class="localizacao-texto">
@@ -454,12 +408,9 @@
                                 </div>
 
                                 <div class="localizacao-item">
-                                    <div class="icon">
-                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                            <path
-                                                d="M5 4h4l2 5-2.5 1.5a14 14 0 0 0 6 6L16 14l5 2v4c0 1-1 2-2 2C10.4 22 2 13.6 2 5c0-1 1-2 2-2Z"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
+                                    <div class="icon" aria-hidden="true">
+                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none">
+                                            <path d="M5 4h4l2 5-2.5 1.5a14 14 0 0 0 6 6L16 14l5 2v4c0 1-1 2-2 2C10.4 22 2 13.6 2 5c0-1 1-2 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </div>
                                     <div class="localizacao-texto">
@@ -469,12 +420,10 @@
                                 </div>
 
                                 <div class="localizacao-item">
-                                    <div class="icon">
-                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                            <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
+                                    <div class="icon" aria-hidden="true">
+                                        <svg class="loc-icon" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </div>
                                     <div class="localizacao-texto">
@@ -484,63 +433,44 @@
                                     </div>
                                 </div>
 
-                                <a href="https://wa.me/5547996257959" target="_blank" rel="noopener noreferrer"
-                                    class="btn btn-primary">Fale conosco pelo WhatsApp</a>
+                                <a href="https://wa.me/5547997632226" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Fale conosco pelo WhatsApp</a>
                             </div>
                         </div>
+
                         <div class="localizacao-mapa">
                             <iframe
+                                title="Localização da Big Gym no Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.0522119774528!2d-48.78191904302732!3d-26.284529869373543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb3aa09e65f73%3A0x83562e08f14cd142!2sBig%20Gym%20Academia!5e0!3m2!1spt-BR!2sbr!4v1771800903782!5m2!1spt-BR!2sbr"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                width="100%" height="100%" style="border:0; filter: invert(1) hue-rotate(180deg);"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
         <div class="container footer-container">
             <p class="footer-copy">© 2026 Big Gym - Todos os direitos reservados</p>
-
             <div class="footer-social">
-                <a href="https://www.instagram.com/academiabiggym_/" target="_blank" class="social-link">
-                    <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                        <title>instagram [#167]</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-
-                        </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)"
-                                fill="currentColor">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path
-                                        d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
-                                        id="instagram-[#167]">
-
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
+                <a href="https://www.instagram.com/academiabiggym_/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Big Gym">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <g fill-rule="evenodd"><g transform="translate(-340,-7439)" fill="currentColor"><g transform="translate(56,160)">
+                        <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"/>
+                        </g></g></g>
                     </svg>
                 </a>
-
-                <a href="https://wa.me/5547996257959" target="_blank" class="social-link">
-                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
-                            fill="currentColor" />
+                <a href="https://wa.me/5547997632226" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp da Big Gym">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="currentColor"/>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class=""></div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
