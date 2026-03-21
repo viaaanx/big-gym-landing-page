@@ -1756,6 +1756,14 @@ svg {
     .float-btn-tooltip { display: none; }
 
     .reveal-card { transition-delay: 0s !important; }
+    .plano-beneficios li::before,
+    .alimentacao-overlay li::before {
+        color: var(--accent) !important;
+    }
+
+    .destaque-plano .plano-beneficios li::before {
+        color: #000 !important;
+    }
 }
 
 @media (max-width: 480px) {
