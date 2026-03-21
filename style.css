@@ -1630,11 +1630,20 @@ svg {
     .alimentacao-overlay li { font-size: 13px; line-height: 1.45; }
 
     .planos-grid {
-        grid-template-columns: 310px;
-        gap: 20px;
-        align-items: start;
-        justify-content: center;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: visible;
+        padding: 4px 20px 14px;
+        margin-left: -20px;
+        margin-right: -20px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 14px;
+        align-items: stretch;
     }
+
+    .planos-grid::-webkit-scrollbar { display: none; }
 
     .plano-card:last-child:nth-child(odd) {
         grid-column: auto;
@@ -1643,17 +1652,20 @@ svg {
     }
 
     .plano-card {
-        width: 310px;
-        height: 500px;
-        padding: 28px 24px 24px;
-        padding-top: 42px;
+        flex: 0 0 78vw;
+        scroll-snap-align: start;
+        height: auto;
+        min-height: 460px;
+        padding: 28px 22px 22px;
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .plano-beneficios {
         flex: 1;
-        margin-bottom: 0;
+        margin-bottom: 12px;
     }
 
     .plano-card .btn {

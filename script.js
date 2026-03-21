@@ -244,6 +244,18 @@
     .js-fade-host {
       position: relative;
     }
+    .js-fade-host::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 64px;
+      height: calc(100% - 18px);
+      pointer-events: none;
+      z-index: 5;
+      background: linear-gradient(to left, transparent, var(--bg-fade-color, #141414));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
     .js-fade-host::after {
       content: "";
       position: absolute;
@@ -256,7 +268,8 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-    .js-fade-host.show-fade::after { opacity: 1; }
+    .js-fade-host.show-fade-right::after { opacity: 1; }
+    .js-fade-host.show-fade-left::before { opacity: 1; }
     .js-scroll-bar-wrap {
       height: 3px;
       background: rgba(255,255,255,0.08);
@@ -298,13 +311,14 @@
       const max = sw - cw;
 
       if (max <= 4) {
-        parent.classList.remove("show-fade");
+        parent.classList.remove("show-fade-right", "show-fade-left");
         wrap.style.opacity = "0";
         return;
       }
 
       wrap.style.opacity = "1";
-      parent.classList.toggle("show-fade", sl < max - 8);
+      parent.classList.toggle("show-fade-right", sl < max - 8);
+      parent.classList.toggle("show-fade-left",  sl > 8);
 
       const thumbW   = Math.max(cw / sw, 0.08) * 100;
       const thumbMax = 100 - thumbW;
@@ -317,11 +331,13 @@
     setTimeout(update, 200);
   }
 
-  const difGrid   = document.querySelector(".diferencial-grid");
-  const instrGrid = document.querySelector(".instrutores-grid");
+  const difGrid    = document.querySelector(".diferencial-grid");
+  const instrGrid  = document.querySelector(".instrutores-grid");
+  const planosGrid = document.querySelector(".planos-grid");
 
-  if (difGrid)   attachBar(difGrid, "#000");
-  if (instrGrid) attachBar(instrGrid, "#141414");
+  if (difGrid)    attachBar(difGrid,    "#000");
+  if (instrGrid)  attachBar(instrGrid,  "#141414");
+  if (planosGrid) attachBar(planosGrid, "#000");
 })();
 
 (function () {
