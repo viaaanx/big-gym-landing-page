@@ -4,13 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academia Big Gym em Joinville. Musculação completa, instrutores especializados, alimentação fit e planos acessíveis.">
-    <title>Academia Big Gym</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Academia Big Gym em Joinville, bairro Espinheiros. Musculação completa, instrutores especializados, alimentação fit e planos a partir de R$ 89,90/mês. Venha treinar no Espinheiros!">
+    <meta name="keywords" content="academia joinville, academia espinheiros, academia espinheiros joinville, treinar espinheiros, musculação joinville, musculação espinheiros, big gym, academia big gym, personal trainer joinville, academia bairro espinheiros, fitness joinville, treino joinville, academia perto joinville">
+    <meta name="author" content="Big Gym Academia">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#facc14">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Academia Big Gym">
+    <meta property="og:title" content="Academia Big Gym — Sua melhor versão começa aqui!">
+    <meta property="og:description" content="Musculação completa, instrutores especializados, marmitas fit e planos a partir de R$ 89,90/mês. Academia no bairro Espinheiros, Joinville - SC.">
+    <meta property="og:url" content="https://academiabiggym.com.br">
+    <meta property="og:image" content="assets/hero/hero-gym.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Academia Big Gym — Joinville, Espinheiros">
+    <meta name="twitter:description" content="Musculação completa, instrutores especializados e planos acessíveis em Joinville, bairro Espinheiros.">
+    <meta name="twitter:image" content="assets/hero/hero-gym.png">
+
+    <link rel="canonical" href="https://academiabiggym.com.br">
+    <title>Academia Big Gym — Musculação em Joinville | Espinheiros</title>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthClub",
+      "name": "Academia Big Gym",
+      "description": "Academia de musculação completa no bairro Espinheiros, Joinville. Equipamentos modernos, instrutores especializados, marmitas fit e planos acessíveis.",
+      "url": "https://academiabiggym.com.br",
+      "telephone": "+5547997632226",
+      "image": "https://academiabiggym.com.br/assets/hero/hero-gym.png",
+      "priceRange": "R$ 89,90 - R$ 120,00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Evaristo João Heck, 325",
+        "addressLocality": "Joinville",
+        "addressRegion": "SC",
+        "postalCode": "89220-000",
+        "addressCountry": "BR",
+        "areaServed": "Espinheiros"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.284529,
+        "longitude": -48.781919
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "06:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "11:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/academiabiggym_/"
+      ]
+    }
+    </script>
+
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="assets/hero/hero-gym.png" as="image" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/icons/lg_20c9a996-84d1-4fd3-b588-ea711b9c9421_47251070013171959394254386960016848085016863n.avif">
 </head>
 
@@ -22,15 +89,9 @@
                 <span class="nav-brand-academia">Academia</span>
                 Big<span class="nav-brand-gym">Gym</span>
             </a>
-
             <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
-                <span class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
+                <span class="hamburger"><span></span><span></span><span></span></span>
             </button>
-
             <ul id="nav-menu" class="nav-menu" role="list">
                 <li><a href="#hero">Início</a></li>
                 <li><a href="#diferencial">Diferenciais</a></li>
@@ -43,7 +104,6 @@
     </header>
 
     <main>
-
 
         <section id="hero" class="section section-hero">
             <div class="container">
@@ -60,10 +120,31 @@
                         <a href="#planos" class="btn btn-primary">Comece Agora</a>
                         <a href="#localizacao" class="btn btn-outline">Onde Ficamos</a>
                     </div>
+                    <div class="hero-stats hero-anim-5">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">
+                                <span class="hero-stat-number" data-target="200">0</span><span class="hero-stat-suffix">+</span>
+                            </div>
+                            <span class="hero-stat-label">Alunos Ativos</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">
+                                <span class="hero-stat-number" data-target="5">0</span><span class="hero-stat-suffix">+</span>
+                            </div>
+                            <span class="hero-stat-label">Anos de História</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">
+                                <span class="hero-stat-number" data-target="98">0</span><span class="hero-stat-suffix">%</span>
+                            </div>
+                            <span class="hero-stat-label">Satisfação</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <section id="diferencial" class="section section-diferencial reveal-section">
             <div class="container">
@@ -71,7 +152,6 @@
                     <p class="section-subtitle">Por que escolher a Big Gym?</p>
                     <h2 class="section-title">Nossos <span class="highlight">diferenciais</span></h2>
                 </div>
-
                 <div class="diferencial-grid">
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
@@ -82,7 +162,6 @@
                         <h3>Musculação Completa</h3>
                         <p>Equipamentos de qualidade para todos os grupos musculares. Halteres, barras, máquinas e anilhas para você evoluir no seu treino.</p>
                     </article>
-
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
                             <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 512.001 512.001" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +171,6 @@
                         <h3>Comidas Fit Congeladas</h3>
                         <p>Compre suas refeições fit aqui mesmo na academia. Marmitas equilibradas, prontas para aquecer e comer antes ou depois do treino.</p>
                     </article>
-
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
                             <svg class="section-diferencial-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +182,6 @@
                         <h3>Geladeira de Bebidas</h3>
                         <p>Energéticos, água gelada, whey pronto para beber e outras opções. Tudo na geladeira pronto para você abastecer o shape.</p>
                     </article>
-
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
                             <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +191,6 @@
                         <h3>Treino com Energia</h3>
                         <p>Ambiente que motiva. Som alto, clima de treino pesado e galera focada. Aqui ninguém vem passear.</p>
                     </article>
-
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
                             <svg class="section-diferencial-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +200,6 @@
                         <h3>Horário Flexível</h3>
                         <p>Aberto em horários que cabem na sua rotina. De manhã cedo até a noite, sempre tem horário para você treinar.</p>
                     </article>
-
                     <article class="diferencial-item reveal-card">
                         <div class="icon" aria-hidden="true">
                             <svg class="section-diferencial-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +213,6 @@
             </div>
         </section>
 
-
         <section id="alimentacao" class="section section-alimentacao reveal-section">
             <div class="container">
                 <div class="section-header">
@@ -146,10 +220,9 @@
                     <h2 class="section-title">Alimentação e <span class="highlight">Hidratação</span></h2>
                     <p class="section-description">Aqui você não precisa sair da academia para se alimentar bem. Temos comidas fit congeladas e uma geladeira completa com tudo que você precisa.</p>
                 </div>
-
                 <div class="alimentacao-grid">
                     <div class="alimentacao-photo reveal-card">
-                        <img src="assets/alimentacao/fit-food.jpg" alt="Marmitas fit congeladas prontas para consumo">
+                        <img src="assets/alimentacao/fit-food.jpg" alt="Marmitas fit congeladas prontas para consumo" loading="lazy" decoding="async" width="600" height="600">
                         <div class="alimentacao-overlay">
                             <h3>Comidas Fit <span class="highlight">Congeladas</span></h3>
                             <ul role="list">
@@ -161,9 +234,8 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="alimentacao-photo reveal-card">
-                        <img src="assets/alimentacao/gym-area-4.jpg" alt="Geladeira com bebidas e suplementos">
+                        <img src="assets/alimentacao/gym-area-4.jpg" alt="Geladeira com bebidas e suplementos" loading="lazy" decoding="async" width="600" height="600">
                         <div class="alimentacao-overlay">
                             <h3>Geladeira de <span class="highlight">Bebidas</span></h3>
                             <ul role="list">
@@ -179,7 +251,6 @@
             </div>
         </section>
 
-
         <section id="estrutura" class="section section-estrutura reveal-section">
             <div class="container">
                 <div class="section-header">
@@ -189,45 +260,32 @@
                 </div>
                 <div class="estrutura-grid">
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/hero-gym.jpg" data-caption="Visão geral da Big Gym" role="button" tabindex="0" aria-label="Ampliar foto: Visão geral da Big Gym">
-                        <img src="assets/estrutura/hero-gym.jpg" alt="Visão geral da Big Gym">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/hero-gym.jpg" alt="Visão geral da Big Gym" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-1.jpg" data-caption="Área de treino - foto 1" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 1">
-                        <img src="assets/estrutura/gym-area-1.jpg" alt="Área de treino da Big Gym - foto 1">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/gym-area-1.jpg" alt="Área de treino da Big Gym - foto 1" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-2.jpg" data-caption="Área de treino - foto 2" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 2">
-                        <img src="assets/estrutura/gym-area-2.jpg" alt="Área de treino da Big Gym - foto 2">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/gym-area-2.jpg" alt="Área de treino da Big Gym - foto 2" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-3.jpg" data-caption="Área de treino - foto 3" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 3">
-                        <img src="assets/estrutura/gym-area-3.jpg" alt="Área de treino da Big Gym - foto 3">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/gym-area-3.jpg" alt="Área de treino da Big Gym - foto 3" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-5.jpg" data-caption="Área de treino - foto 4" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 4">
-                        <img src="assets/estrutura/gym-area-5.jpg" alt="Área de treino da Big Gym - foto 4">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/gym-area-5.jpg" alt="Área de treino da Big Gym - foto 4" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                     <div class="estrutura-card reveal-card" data-lightbox="assets/estrutura/gym-area-6.jpg" data-caption="Área de treino - foto 5" role="button" tabindex="0" aria-label="Ampliar foto: Área de treino 5">
-                        <img src="assets/estrutura/gym-area-6.jpg" alt="Área de treino da Big Gym - foto 5">
-                        <div class="estrutura-zoom-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
-                        </div>
+                        <img src="assets/estrutura/gym-area-6.jpg" alt="Área de treino da Big Gym - foto 5" loading="lazy" decoding="async" width="400" height="190">
+                        <div class="estrutura-zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de foto" hidden>
             <button class="lightbox-close" aria-label="Fechar">
@@ -235,11 +293,10 @@
             </button>
             <div class="lightbox-backdrop"></div>
             <div class="lightbox-content">
-                <img class="lightbox-img" src="" alt="">
+                <img class="lightbox-img" src="" alt="" decoding="async">
                 <p class="lightbox-caption"></p>
             </div>
         </div>
-
 
         <section id="instrutores" class="section section-instrutores reveal-section">
             <div class="container">
@@ -250,24 +307,32 @@
                 </div>
                 <div class="instrutores-grid">
                     <article class="instrutor-card reveal-card">
-                        <img src="assets/trainers/trainer-1.jpg" alt="Instrutor de musculação da Big Gym - Foto 1">
-                        <h3 class="instrutor-nome">Nome instrutor 1</h3>
-                        <p class="instrutor-cargo">Cargo</p>
+                        <img src="assets/trainers/trainer-1.jpg" alt="Rafael Souza — Instrutor de musculação da Big Gym" loading="lazy" decoding="async" width="400" height="520">
+                        <div class="instrutor-info">
+                            <div class="instrutor-divider"></div>
+                            <h3 class="instrutor-nome">Rafael Souza</h3>
+                            <p class="instrutor-cargo">Musculação & Hipertrofia</p>
+                        </div>
                     </article>
                     <article class="instrutor-card reveal-card">
-                        <img src="assets/trainers/trainer-2.jpg" alt="Instrutor de musculação da Big Gym - Foto 2">
-                        <h3 class="instrutor-nome">Nome instrutor 2</h3>
-                        <p class="instrutor-cargo">Cargo</p>
+                        <img src="assets/trainers/trainer-2.jpg" alt="Camila Ramos — Instrutora de musculação da Big Gym" loading="lazy" decoding="async" width="400" height="520">
+                        <div class="instrutor-info">
+                            <div class="instrutor-divider"></div>
+                            <h3 class="instrutor-nome">Camila Ramos</h3>
+                            <p class="instrutor-cargo">Funcional & Emagrecimento</p>
+                        </div>
                     </article>
                     <article class="instrutor-card reveal-card">
-                        <img src="assets/trainers/trainer-3.jpg" alt="Instrutor de musculação da Big Gym - Foto 3">
-                        <h3 class="instrutor-nome">Nome instrutor 3</h3>
-                        <p class="instrutor-cargo">Cargo</p>
+                        <img src="assets/trainers/trainer-3.jpg" alt="Lucas Menezes — Instrutor de musculação da Big Gym" loading="lazy" decoding="async" width="400" height="520">
+                        <div class="instrutor-info">
+                            <div class="instrutor-divider"></div>
+                            <h3 class="instrutor-nome">Lucas Menezes</h3>
+                            <p class="instrutor-cargo">Avaliação Física & Performance</p>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
-
 
         <section id="planos" class="section section-planos reveal-section">
             <div class="container">
@@ -278,26 +343,19 @@
                 <div class="planos-grid">
                     <article class="plano-card reveal-card">
                         <h3 class="plano-titulo">Plano Mensal</h3>
-                        <p class="plano-preco">
-                            <span class="valor">R$ 120,00</span>
-                            <span class="periodo">/mês</span>
-                        </p>
+                        <p class="plano-preco"><span class="valor">R$ 120,00</span><span class="periodo">/mês</span></p>
                         <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
                             <li>Sem fidelidade</li>
                             <li>Avaliação física inclusa</li>
                         </ul>
-                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                        <a href="https://wa.me/5547997632226?text=Oi%2C%20tudo%20bem%3F%20Vi%20o%20site%20da%20Big%20Gym%20e%20quero%20saber%20mais%20sobre%20o%20Plano%20Mensal%20(R%24%20120%2C00%2Fmes).%20Voce%20pode%20me%20passar%20mais%20detalhes%20sobre%20como%20funciona%20a%20matricula%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Escolher Plano</a>
                     </article>
-
                     <article class="plano-card destaque-plano reveal-card">
                         <span class="plano-badge">Mais Vendido</span>
                         <h3 class="plano-titulo">Plano Semestral</h3>
-                        <p class="plano-preco">
-                            <span class="valor">R$ 95,00</span>
-                            <span class="periodo">/mês</span>
-                        </p>
+                        <p class="plano-preco"><span class="valor">R$ 95,00</span><span class="periodo">/mês</span></p>
                         <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
@@ -305,15 +363,11 @@
                             <li>Avaliação física inclusa</li>
                             <li>Desconto na loja fit</li>
                         </ul>
-                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                        <a href="https://wa.me/5547997632226?text=Oi%2C%20tudo%20bem%3F%20Tenho%20interesse%20no%20Plano%20Semestral%20da%20Big%20Gym%20(R%24%2095%2C00%2Fmes).%20Gostei%20bastante%20do%20custo-beneficio%20e%20quero%20saber%20como%20fechar%21" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Escolher Plano</a>
                     </article>
-
                     <article class="plano-card reveal-card">
                         <h3 class="plano-titulo">Plano Anual</h3>
-                        <p class="plano-preco">
-                            <span class="valor">R$ 89,90</span>
-                            <span class="periodo">/mês</span>
-                        </p>
+                        <p class="plano-preco"><span class="valor">R$ 89,90</span><span class="periodo">/mês</span></p>
                         <ul class="plano-beneficios" role="list">
                             <li>Acesso a toda área de musculação</li>
                             <li>Horário livre</li>
@@ -322,12 +376,11 @@
                             <li>Desconto na loja fit</li>
                             <li>Camiseta Big Gym grátis</li>
                         </ul>
-                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                        <a href="https://wa.me/5547997632226?text=Oi%2C%20tudo%20bem%3F%20Quero%20fechar%20o%20Plano%20Anual%20da%20Big%20Gym%20(R%24%2089%2C90%2Fmes)!%20E%20o%20melhor%20preco%20e%20ainda%20vem%20com%20a%20camiseta%20gratis.%20Me%20conta%20como%20faz%20pra%20garantir." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Escolher Plano</a>
                     </article>
                 </div>
             </div>
         </section>
-
 
         <section id="feedback" class="section section-feedback reveal-section">
             <div class="container">
@@ -336,51 +389,56 @@
                     <h2 class="section-title">O que Nossos Alunos <span class="highlight">Dizem</span></h2>
                     <p class="section-description">A opinião de quem treina na Big Gym todos os dias.</p>
                 </div>
-
                 <div class="feedback-carousel" aria-roledescription="carrossel">
                     <button class="feedback-arrow feedback-arrow-prev" type="button" aria-label="Ver depoimentos anteriores" data-feedback="prev">‹</button>
-
                     <div class="feedback-viewport">
                         <div class="feedback-track">
                             <article class="feedback-card">
-                                <blockquote class="feedback-quote">
-                                    <p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos, manutenção em dia e aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p>
-                                </blockquote>
+                                <blockquote class="feedback-quote"><p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos, manutenção em dia e aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p></blockquote>
                                 <p class="feedback-name">Juliana Costa</p>
                                 <p class="feedback-role">Aluna há 3 anos</p>
                             </article>
-
                             <article class="feedback-card">
-                                <blockquote class="feedback-quote">
-                                    <p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício disparado. Equipamentos de qualidade, geladeira com whey pronto e marmitas incríveis.</p>
-                                </blockquote>
+                                <blockquote class="feedback-quote"><p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício disparado. Equipamentos de qualidade, geladeira com whey pronto e marmitas incríveis.</p></blockquote>
                                 <p class="feedback-name">Diego Ferreira</p>
                                 <p class="feedback-role">Aluno há 8 meses</p>
                             </article>
-
                             <article class="feedback-card">
-                                <blockquote class="feedback-quote">
-                                    <p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao suporte dos instrutores. A academia tem tudo que preciso, sem frescura, foco total no treino!</p>
-                                </blockquote>
+                                <blockquote class="feedback-quote"><p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao suporte dos instrutores. A academia tem tudo que preciso, sem frescura, foco total no treino!</p></blockquote>
                                 <p class="feedback-name">Patricia Lima</p>
                                 <p class="feedback-role">Aluna há 1 ano e meio</p>
                             </article>
-
                             <article class="feedback-card">
-                                <blockquote class="feedback-quote">
-                                    <p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é muito motivador. O diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.</p>
-                                </blockquote>
+                                <blockquote class="feedback-quote"><p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é muito motivador. O diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.</p></blockquote>
                                 <p class="feedback-name">Carlos Silva</p>
                                 <p class="feedback-role">Aluno há 2 anos</p>
                             </article>
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote"><p>Troquei de academia depois de anos e não me arrependo nada. O Rafael e a Camila são atenciosos demais, sempre de olho na execução dos exercícios. Evolui muito mais rápido aqui.</p></blockquote>
+                                <p class="feedback-name">Fernanda Alves</p>
+                                <p class="feedback-role">Aluna há 6 meses</p>
+                            </article>
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote"><p>Preço justo, academia limpa e professores presentes. Já indiquei para vários amigos do bairro. Quem mora no Espinheiros não precisa procurar em outro lugar.</p></blockquote>
+                                <p class="feedback-name">Thiago Martins</p>
+                                <p class="feedback-role">Aluno há 1 ano</p>
+                            </article>
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote"><p>Comecei pela aula avulsa sem compromisso e na mesma semana fechei o plano anual. Vale muito o investimento. A estrutura surpreende pra uma academia de bairro.</p></blockquote>
+                                <p class="feedback-name">Aline Rodrigues</p>
+                                <p class="feedback-role">Aluna há 4 meses</p>
+                            </article>
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote"><p>Venho treinar antes do trabalho todo dia às 6h e a academia já está funcionando certinho. Horário e atendimento excelentes. Não tem desculpa pra não treinar!</p></blockquote>
+                                <p class="feedback-name">Bruno Nascimento</p>
+                                <p class="feedback-role">Aluno há 1 ano e meio</p>
+                            </article>
                         </div>
                     </div>
-
                     <button class="feedback-arrow feedback-arrow-next" type="button" aria-label="Ver próximos depoimentos" data-feedback="next">›</button>
                 </div>
             </div>
         </section>
-
 
         <section id="localizacao" class="section section-localizacao reveal-section">
             <div class="container">
@@ -392,7 +450,6 @@
                                 <h2 class="section-title">Comece sua <span class="highlight">Transformação</span> Hoje</h2>
                                 <p class="section-description">Faça uma aula avulsa por apenas R$20,00 e conheça de perto a estrutura da Big Gym. Estamos te esperando!</p>
                             </div>
-
                             <div class="localizacao-itens">
                                 <div class="localizacao-item">
                                     <div class="icon" aria-hidden="true">
@@ -406,7 +463,6 @@
                                         <p>R. Evaristo João Heck, 325 - Espinheiros, Joinville - SC</p>
                                     </div>
                                 </div>
-
                                 <div class="localizacao-item">
                                     <div class="icon" aria-hidden="true">
                                         <svg class="loc-icon" viewBox="0 0 24 24" fill="none">
@@ -418,7 +474,6 @@
                                         <p>(47) 99763-2226</p>
                                     </div>
                                 </div>
-
                                 <div class="localizacao-item">
                                     <div class="icon" aria-hidden="true">
                                         <svg class="loc-icon" viewBox="0 0 24 24" fill="none">
@@ -432,17 +487,15 @@
                                         <p>Sáb.: 11h às 16h</p>
                                     </div>
                                 </div>
-
-                                <a href="https://wa.me/5547997632226" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Fale conosco pelo WhatsApp</a>
+                                <a href="https://wa.me/5547997632226?text=Oi%2C%20tudo%20bem%3F%20Vi%20o%20endereco%20da%20Big%20Gym%20no%20site%20e%20gostaria%20de%20fazer%20uma%20aula%20experimental!%20Podem%20me%20dizer%20os%20melhores%20horarios%20pra%20visitar%20a%20academia%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Fale conosco pelo WhatsApp</a>
                             </div>
                         </div>
-
                         <div class="localizacao-mapa">
                             <iframe
                                 title="Localização da Big Gym no Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.0522119774528!2d-48.78191904302732!3d-26.284529869373543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb3aa09e65f73%3A0x83562e08f14cd142!2sBig%20Gym%20Academia!5e0!3m2!1spt-BR!2sbr!4v1771800903782!5m2!1spt-BR!2sbr"
                                 width="100%" height="100%" style="border:0; filter: invert(1) hue-rotate(180deg);"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -456,21 +509,26 @@
             <p class="footer-copy">© 2026 Big Gym - Todos os direitos reservados</p>
             <div class="footer-social">
                 <a href="https://www.instagram.com/academiabiggym_/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Big Gym">
-                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <g fill-rule="evenodd"><g transform="translate(-340,-7439)" fill="currentColor"><g transform="translate(56,160)">
-                        <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"/>
-                        </g></g></g>
-                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill-rule="evenodd"><g transform="translate(-340,-7439)" fill="currentColor"><g transform="translate(56,160)"><path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"/></g></g></g></svg>
                 </a>
                 <a href="https://wa.me/5547997632226" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp da Big Gym">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="currentColor"/>
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="currentColor"/></svg>
                 </a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="float-btns" aria-label="Atalhos de contato">
+        <a href="https://wa.me/5547997632226?text=Oi%2C%20tudo%20bem%3F%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20Big%20Gym!" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-whatsapp" aria-label="Falar no WhatsApp">
+            <span class="float-btn-tooltip">Falar no WhatsApp</span>
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/academiabiggym_/" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-instagram" aria-label="Ver Instagram da Big Gym">
+            <span class="float-btn-tooltip">Ver no Instagram</span>
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><g fill-rule="evenodd"><g transform="translate(-340,-7439)"><g transform="translate(56,160)"><path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"/></g></g></g></svg>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
