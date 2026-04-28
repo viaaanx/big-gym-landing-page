@@ -1,6 +1,7 @@
 # Big Gym Landing Page
 
 Landing page desenvolvida para uma academia real (Big Gym), com foco em presença digital, estrutura semântica e experiência do usuário.
+<img width="1600" height="899" alt="WhatsApp Image 2026-04-27 at 23 34 02" src="https://github.com/user-attachments/assets/cc5bdafa-6fb1-47c0-9066-17fcace07d6e" />
 
 ## Links
 - Deploy: https://viaaanx.github.io/big-gym-landing-page/
@@ -29,4 +30,4 @@ Landing page desenvolvida para uma academia real (Big Gym), com foco em presenç
 ## Como rodar localmente
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/viaaanx/big-gym-landing-page.git](https://github.com/viaaanx/big-gym-landing-page.git)
+   git clone https://github.com/viaaanx/big-gym-landing-page.git
