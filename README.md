@@ -8,22 +8,25 @@ Landing page desenvolvida para uma academia real (Big Gym), com foco em presenç
 
 ## Funcionalidades
 - Navegação por seções com scroll suave
-- Hero com CTA (Comece Agora / Onde Ficamos)
-- Seção de diferenciais em cards (grid)
+- Hero com CTA (Comece Agora / Onde Ficamos) e contadores animados
+- Seção de diferenciais em cards (Grid Layout)
 - Seção de alimentação com overlay e efeitos de hover
-- Galeria de estrutura (grid de imagens)
-- Planos com destaque para o “Mais vendido”
-- Depoimentos em formato de carrossel (UI pronta)
-- Localização com mapa incorporado e CTA para WhatsApp
+- Galeria de estrutura com Lightbox integrado (visualização de imagens)
+- Seção de instrutores com cards interativos
+- Planos com destaque para o "Mais vendido" e integração com WhatsApp
+- Depoimentos em formato de carrossel (UI própria em JS)
+- Localização com mapa incorporado e tema personalizado
 - Footer com links sociais (Instagram / WhatsApp)
 
-## Tecnologias
-- HTML5
+## Tecnologias e SEO
+- HTML5 (Semântico)
 - CSS3 (Flexbox + Grid)
-- JavaScript (em evolução para interações/carrossel)
-- GitHub Pages (deploy)
+- JavaScript Vanilla (Lightbox, Carrossel, Intersection Observer)
+- Dados Estruturados (JSON-LD LocalBusiness para Google)
+- Meta tags otimizadas para compartilhamento (OG e Twitter Cards)
+- GitHub Pages (Deploy)
 
 ## Como rodar localmente
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/viaaanx/big-gym-landing-page.git
+   git clone [https://github.com/viaaanx/big-gym-landing-page.git](https://github.com/viaaanx/big-gym-landing-page.git)
